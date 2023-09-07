@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App-logo {
@@ -7,11 +8,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +25,59 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+nav{
+  display: flex;
+  height: 70px;
+ box-shadow:  0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.10);
+ padding :20px 30px
+}
+
+section{
+  padding: 10px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-photo{
+  max-width: 100%;
+  align-self: center;
+}
+.hero-header{
+ margin-bottom: 16px;
+}
+.hero-header, .hero-text{
+  margin-left: 20px;
+}
+
+.card{
+  font-size: 12px;
+  width :175px;
+  padding: 10px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+position: relative;
+}
+.card-info{
+  display: flex;
+  justify-content: flex-start;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
